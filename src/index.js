@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import App from './App';
+import InfoProvider from './Component/Context';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <InfoProvider>
+         <App />
+      </InfoProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -13,11 +13,10 @@ const HocSetColor =(color)=> (WrappedComponent)=>{
               
            }
        }
-
        render(){
            return <WrappedComponent backColor={this.state.backColor}/>
            
        }
    }
 }
-export  default HocSetColor
+export  default HocSetColor 
